@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hospital Dashboard</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🏥 Hospital Management</h1>
+
+        <p class="subtitle">
+            Patient registration successful!
+        </p>
+
+        <div style="text-align: center; margin-top: 25px;">
+            <p style="font-size: 18px; color: #333;">
+                Patient data has been stored successfully in MySQL.
+            </p>
+
+            <br>
+
+            <a href="/" style="
+                display: inline-block;
+                padding: 12px 25px;
+                background: #176b87;
+                color: white;
+                text-decoration: none;
+                border-radius: 7px;
+                font-weight: bold;
+            ">
+                Register Another Patient
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>

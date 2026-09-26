@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hospital Management System</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🏥 Hospital Management System</h1>
+        <p class="subtitle">Patient Registration</p>
+
+        <form action="/" method="POST">
+
+            <div class="form-group">
+                <label for="patient_name">Patient Name</label>
+                <input
+                    type="text"
+                    id="patient_name"
+                    name="patient_name"
+                    placeholder="Enter patient name"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input
+                    type="number"
+                    id="age"
+                    name="age"
+                    placeholder="Enter age"
+                    min="1"
+                    max="120"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter phone number"
+                    maxlength="15"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="disease">Disease / Problem</label>
+                <input
+                    type="text"
+                    id="disease"
+                    name="disease"
+                    placeholder="Enter disease or problem"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="doctor">Doctor</label>
+                <input
+                    type="text"
+                    id="doctor"
+                    name="doctor"
+                    placeholder="Enter doctor's name"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="admission_date">Admission Date</label>
+                <input
+                    type="date"
+                    id="admission_date"
+                    name="admission_date"
+                    required
+                >
+            </div>
+
+            <button type="submit">Register Patient</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
